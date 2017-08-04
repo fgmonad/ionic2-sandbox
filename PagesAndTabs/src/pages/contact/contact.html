@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Three
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides #mySlider index=0 (ionDidChange)="onSlideChanged($event)">
+    <ion-slide style="background: green;">
+      <h2>Slide 1</h2>
+    </ion-slide>
+    <ion-slide style="background: blue;">
+      <h2>Slide 2</h2>
+    </ion-slide>
+    <ion-slide style="background: red;">
+      <h2>Slide 3</h2>
+    </ion-slide>
+  </ion-slides>
+
+  <!--<ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-left></ion-icon>
+      @ionicframework
+    </ion-item>
+  </ion-list>-->
+
+</ion-content>
